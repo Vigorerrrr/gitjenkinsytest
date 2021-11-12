@@ -3,7 +3,10 @@
 # @software  :PyCharm     
 # @file      :run.py
 import time
-
+import os
+import sys
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0,BASE_DIR)
 import pytest
 import time
 timestr = str(int(time.time()))
